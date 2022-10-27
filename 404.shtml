@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles-003.css">
+
+    <link rel="shortcut icon" href="/assets/media/favicon.ico" type="image/x-icon">
+    <title>Nismo mogli da pronadjemo željenu stranicu!</title>
+</head>
+
+
+<body>
+    <div class="cetristocetri-container">
+        <h1>404</h1>
+        <p>Izgleda da ta stranica ne postoji!</p>
+        <a href="/" class = "main-btn plava">Naslovna stranica</a>
+    </div>
+</body>
+
+
+</html>

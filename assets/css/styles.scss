@@ -1,0 +1,50 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f6f7 !important;
+}
+
+.text-xs {
+    font-size: 14px;
+}
+
+.focus-none:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar {
+    height: 80px;
+}
+
+.navbar.bg-primary {
+    background: #0075be;
+}
+
+.navbar .btn {
+    color: white !important;
+}
+
+.navbar .btn img,
+.navbar .btn svg  {
+    width: 24px;
+    height: 24px;
+}
+
+.maxheight-container {
+    min-height: calc(100vh - 242px);
+  }
+
+h1 {
+    font-weight: bold;
+    font-size: 26px !important;
+}
+
+h1 span img {
+    width: 24px;
+    height: 24px;
+}
