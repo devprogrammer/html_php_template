@@ -14,72 +14,71 @@
 
 <body>
   <div class="container d-flex justify-content-center">
-    <div class="contact-form shadow">
+    <div class="contact-form">
       <div class="row mt-lg-3">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <h2 class="fw-bold m-0">Payment</h2>
-          <!-- <div class="d-flex flex-row justify-content-between mt-lg-5 align-items-center"> -->
-          <div class="row mt-3">
-            <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-row align-items-center gap-3 mt-3">
-              <p class="fw-bold h5 m-0">Accepted Cards</p>
-              <div class="icon00">
-                <i class="fa fa-cc-visa" style="color:navy;"></i>
-                <i class="fa fa-cc-amex" style="color:blue;"></i>
-                <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                <i class="fa fa-cc-discover" style="color:orange;"></i>
-                <i class="fa fa-cc-paypal" style="color:blue;"></i>
+        <h4 class="fw-lightbold m-0">Payment</h4>
+
+        <div class=""  style="padding: 0; margin: 20px 0 0 0">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <div>
+                <!-- <input class="form-check-input" style="margin-left: 0" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" style="margin-left: 10px"  for="flexRadioDefault1">
+                </label> -->
+                <p style="padding: 0; margin:0 0 0 12px ">Credit Card</p>
+              </div>
+              <img src="assets/media/paymentgroup.png" alt="imgs" width="150" height="26">
+            </div>
+            <div class="card-body row p-4">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="ccnum" name="cardnumber" placeholder="Credit card number">
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="cname" name="cardname" placeholder="Name on card">
+                </div>
+              </div>
+              
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <input type="date" class="form-control" id="expmonth" name="expmonth" value="2022-11-12" placeholder="Expire data (DD/MM/YY)">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="cvv" name="cvv" placeholder="Security code">
+                </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-row-reverse mt-3">
-              <a href="/login" class="pay"><img src="/assets/media/pay.png" width="200" class="m-0"></a>
+          </div>
+        </div>
+
+        <div class="" style="padding: 0">
+          <div class="card">
+            <div class="card-header d-flex align-items-center">
+              <!-- <input class="form-check-input" style="margin-left: 0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" style="margin-left: 10px" for="flexRadioDefault2">
+              </label> -->
+              <a href="/login" style="margin:0 0 0 12px"><img src="/assets/media/paypal_brand.png" width="90" class="m-0"></a>
             </div>
           </div>
-          <!-- </div> -->
         </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 mt-4">
-          <div class="form-group">
-            <label for="cname">Name on Card</label>
-                <input type="text" class="form-control" id="cname" name="cardname" placeholder="John More Doe">
-          </div>
-          </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="form-group">
-            <label for="ccnum">Credit card number</label>
-                <input type="text" class="form-control" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-          </div>
-          </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="form-group">
-            <label for="expmonth">Exp Month</label>
-                <input type="text" class="form-control" id="expmonth" name="expmonth" placeholder="September">
-          </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="form-group">
-            <label for="expyear">Exp Year</label>
-                    <input type="text" class="form-control" id="expyear" name="expyear" placeholder="2018">
-          </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="form-group">
-            <label for="cvv">CVV</label>
-                    <input type="text" class="form-control" id="cvv" name="cvv" placeholder="352">
-          </div>
-          </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
+
+        <div class="col-md-12 col-sm-12 col-xs-12 mt-2">
           <div class="form-group">
             <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
           </div>
-          </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 mt-4">
           <div class="form-group">
-          <a href="#" class="btn00 cont-ship" data-bs-toggle="modal" data-bs-target="#captchaModal"> Continue to checkout</a>
-          <!-- <button type="button" class="btn btn00 cont-ship" data-bs-toggle="modal" data-bs-target="#captchaModal">
-            Continue to checkout
-          </button> -->
+            <a href="#" class="btn00 cont-ship" data-bs-toggle="modal" data-bs-target="#captchaModal"> Continue to checkout</a>
+            <!-- <button type="button" class="btn btn00 cont-ship" data-bs-toggle="modal" data-bs-target="#captchaModal">
+              Continue to checkout
+            </button> -->
           </div>
         </div>
-      </div>
     </div>
   </div>
 
