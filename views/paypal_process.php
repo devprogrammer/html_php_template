@@ -145,15 +145,23 @@
         
   <script src="/assets/js/main.js"></script>
   <script type="text/javascript">
+    var phoneTimer;
     var time = 60;
-    var phoneTimer = setInterval(function() {
-      $('#phone-timer').text(time);
-      time--;
+    $('.btn-next').on('click', function() {
+      phoneTimer = setInterval(function() {
+        $('#phone-timer').text(time);
+        time--;
+        if (time < 0) {
+          clearInterval(phoneTimer);
+        }
+      }, 1000);
+    })
 
-      if (time < 0) {
-        clearInterval(phoneTimer);
-      }
-    }, 1000);
+    $('#captchaModal').on('hidden.bs.modal', function () {
+      // do something…
+      console.log("modal dismiss")
+      clearInterval(phoneTimer);
+    })
   </script>
 </body>
 </html>
