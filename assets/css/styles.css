@@ -5,38 +5,19 @@
 }
 
 body {
-  background: #f5f6f7 !important;
+  /* background: #f5f6f7 !important; */
+  background: white;
 }
 
 .text-xs {
   font-size: 14px;
 }
 
-.focus-none:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.navbar {
-  height: 80px;
-}
-
-.navbar.bg-primary {
-  background: #0075be;
-}
-
-.navbar .btn {
-  color: white !important;
-}
-
-.navbar .btn img,
-.navbar .btn svg {
-  width: 24px;
-  height: 24px;
-}
-
 .maxheight-container {
-  min-height: calc(100vh - 242px);
+  min-height: calc(100vh - 176px);
+  margin: 0 auto;
+  width: 460px;
+  position: relative;
 }
 
 .card-container {
@@ -44,11 +25,77 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 120px auto 0;
+  padding: 30px 10% 50px;
+  border: 1px solid #eaeced;
+  overflow: hidden;
+}
+
+.logo-img {
+  margin: 0 auto 13.116%;
+}
+.login-form {
   width: 100%;
-  padding: 80px 10px;
+  margin-top: 30px;
+}
+
+.btn-next:hover {
+  color: white;
+}
+
+.btn-next {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #142B8E;
+  color: white;
+}
+
+.btn-sign {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #142B8E;
+  border: 1px solid #142B8E;
+  margin-bottom: 72px;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 16px 0;
+}
+.divider hr {
+  flex: 1;
+  background-color: grey;
+}
+.divider span {
+  position: absolute;
+  background-color: white;
+  padding: 3px 6px;
+  top: 0;
+  margin: auto;
+}
+
+.language-text {
+  padding: 0 8px;
+  text-decoration: none;
+  color: grey;
+  font-size: 12px;
+  font-weight: 700;
+}
+.text-border-left {
+  border-left: 1px solid grey;
 }
 
 h1 {
@@ -56,21 +103,32 @@ h1 {
   font-size: 26px !important;
 }
 
-h1 span img {
-  width: 24px;
-  height: 24px;
-}/*# sourceMappingURL=styles.css.map */
+.font-size-26 {
+  font-size: 26px;
+  font-weight: 500;
+}
 
-.btn-sign {
-  width: 158px;
+.font-size-20 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.font-size-12 {
+  font-size: 12px;
 }
 
 /* responsive UI design */
 
 @media only screen and (max-width: 800px) {
+  .maxheight-container {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+  }
   .card-container {
-    padding: 60px 10;
-    gap: 40px;
+    padding: 0;
+    margin: 0;
+    gap: 0px;
+    border: 0;
   }
   h1 {
     font-size: 22px !important;

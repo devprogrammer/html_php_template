@@ -1,15 +1,11 @@
 
-<footer class="d-flex bg-body flex-wrap justify-content-between align-items-center py-4 mt-4 px-3">
-    <ul class="nav col-md-4 list-unstyled d-flex">
-        <li class="ms-3"><a class="fw-bold" href="#">Legal</a></li>
-        <li class="ms-3"><a class="fw-bold" href="#">Privacy</a></li>
-        <li class="ms-3"><a class="fw-bold" href="#">Security</a></li>
-        <li class="ms-3"><a class="fw-bold" href="#">Accessibility</a></li>
-    </ul>
-
-    <ul class="nav col-md-4 justify-content-end align-items-center list-unstyled d-flex">
-        <li class="ms-3"><a class="fw-bold" href="#">CDIC Member</a></li>
-        <li class="ms-3"><a class="btn p-0 rounded-pill" href="#"><img style="width: 88px; height: 40px" src="/assets/media/cdic-logo-footer.svg" alt="Cdic logo"></a></li>
+<footer class="d-flex bg-body flex-wrap justify-content-center align-items-center py-3 px-3 border-top">
+    <ul class="nav col-md-4 list-unstyled d-flex justify-content-center font-size-12">
+        <li class="ms-2"><a class="fw-bold text-secondary text-decoration-none" href="#">Contract Us</a></li>
+        <li class="ms-2"><a class="fw-bold text-secondary text-decoration-none" href="#">Privacy</a></li>
+        <li class="ms-2"><a class="fw-bold text-secondary text-decoration-none" href="#">Legal</a></li>
+        <li class="ms-2"><a class="fw-bold text-secondary text-decoration-none" href="#">Policy Updates</a></li>
+        <li class="ms-2"><a class="fw-bold text-secondary text-decoration-none" href="#">Worldwides</a></li>
     </ul>
   </div>
 </footer>
