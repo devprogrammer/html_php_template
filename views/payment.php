@@ -97,7 +97,6 @@
           <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#captchar_modal">
             Pay
           </button> -->
-          <p class="text-xs mt-4 text-muted"><b>Heads-up:</b> Already registered your BMO debit card? No need to register your credit card. You're all set to sign in!</p>
         </form>
       </div>
     </div>
