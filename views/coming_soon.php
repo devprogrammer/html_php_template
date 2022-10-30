@@ -24,9 +24,7 @@
 
 					<!-- HERO CONTENT -->
 					<h1 class="m-b-40">Coming back <b>soon.</b></h1>
-					<p class="lead m-b-60">website maintenance, please try again later, and add a maintenance symbol, such as a barricade</p>
-
-					
+					<p class="lead m-b-60">Coming soon, please try again later</p>					
 
 				</div>
 			</div>
