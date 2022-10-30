@@ -36,11 +36,11 @@ body {
 }
 
 .logo-img {
-  margin: 0 auto 13.116%;
+  margin: 0 auto 30px;
 }
 .login-form {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .btn-next:hover {

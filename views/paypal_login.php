@@ -18,6 +18,8 @@
   <div class="container maxheight-container mt-5">
     <div class="card-container">
       <img class="logo-img" src="/assets/media/paypal_icon.png" width="34" height="40" />
+        <h4>Pay with PayPal</h4>
+        <p>Enter your email address to get started</p>
       <form method="POST" class="login-form needs-validation" action="/process" novalidate>
         <div class="form-floating mb-3 card-number-field">
           <input required type="text" class="floatingInput form-control" id="card-number" placeholder="Email or Phone number">
