@@ -121,6 +121,15 @@ h1 {
   padding: 50px 40px;
 }
 
+.contact-form {
+  width: 700px;
+  padding: 40px 60px;
+  margin-top: 30px;
+}
+.contact-form label {
+  font-size: 14px;
+  font-weight: 700;
+}
 /* responsive UI design */
 
 @media only screen and (max-width: 800px) {

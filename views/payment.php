@@ -13,22 +13,26 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="contact-form">
-      <div class="row mt-lg-5">
+  <div class="container d-flex justify-content-center">
+    <div class="contact-form shadow">
+      <div class="row mt-lg-3">
         <div class="col-md-12 col-sm-12 col-xs-12">
-          <h2>Payment</h2>
-          <p>Accepted Cards</p>
-          <div class="icon00">
-            <i class="fa fa-cc-visa" style="color:navy;"></i>
-            <i class="fa fa-cc-amex" style="color:blue;"></i>
-            <i class="fa fa-cc-mastercard" style="color:red;"></i>
-            <i class="fa fa-cc-discover" style="color:orange;"></i>
-            <i class="fa fa-cc-paypal" style="color:blue;"></i>
+          <h2 class="fw-bold m-0">Payment</h2>
+          <div class="d-flex flex-row justify-content-between mt-lg-5 align-items-center">
+            <div class="d-flex flex-row justify-content-between align-items-center gap-3">
+              <p class="fw-bold h5 m-0">Accepted Cards</p>
+              <div class="icon00">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                <i class="fa fa-cc-paypal" style="color:blue;"></i>
+              </div>
+            </div>
+            <a href="/login" class="pay"><img src="/assets/media/pay.png" width="200" class="m-0"></a>
           </div>
-          <a href="/login" class="pay"><img src="/assets/media/pay.png"></a>
         </div>
-        <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12 mt-4">
           <div class="form-group">
             <label for="cname">Name on Card</label>
                 <input type="text" class="form-control" id="cname" name="cardname" placeholder="John More Doe">
