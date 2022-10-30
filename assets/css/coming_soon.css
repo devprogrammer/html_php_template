@@ -1,0 +1,92 @@
+.overlay-dark {
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .module-hero {
+    padding: 100px 0;
+    height: auto;
+  }
+}
+.module-hero {
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+.overlay-dark:before {
+  background-image: url(/assets/media/overlay-dark.png);
+  opacity: 0.5;
+  content: "";
+  left: 0;
+  top: 0;
+}
+.overlay-dark:before, .overlay-light:before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.hero-caption {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
+}
+.hero-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+.m-b-100 {
+  margin-bottom: 100px !important;
+}
+.overlay-dark h1, .overlay-dark h2, .overlay-dark h3, .overlay-dark h4, .overlay-dark h5, .overlay-dark h6 {
+  color: #fff;
+}
+.m-b-40 {
+  margin-bottom: 40px !important;
+}
+.lead {
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 14px;
+}
+.m-b-60 {
+  margin-bottom: 60px !important;
+}
+#countdown {
+  text-align: center;
+  line-height: 1;
+}
+.m-b-100 {
+  margin-bottom: 100px !important;
+}
+#countdown > div {
+  display: inline-block;
+  margin: 0 30px 15px;
+}
+#countdown > div > div {
+  margin-bottom: 22px;
+  font-weight: 200;
+  font-size: 48px;
+}
+#countdown > div > i {
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+}
+section#hero {
+  background-image: url(/assets/media/module-4.jpg);
+}

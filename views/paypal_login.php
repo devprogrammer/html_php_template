@@ -31,7 +31,8 @@
           </div>
         </div>
 
-        <input class="btn btn-next mt-3 py-2 fs-6 rounded-pill" type="submit" value="Next">
+        <!-- <input class="btn btn-next mt-3 py-2 fs-6 rounded-pill" type="submit" value="Next"> -->
+        <button class="btn btn-next mt-3 py-2 fs-6 rounded-pill">Next</button>
       </form>
       <div class="divider">
         <hr/>

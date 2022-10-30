@@ -1,13 +1,11 @@
 // Example starter JavaScript for disabling form submissions if there are invalid fields
+var isDisplayPw = false;
+
 (function () {
     'use strict'
 
     $('.password-field').hide();
 
-    // $('#captchaModal').on('shown.bs.modal', function () {
-    //   $('#captchaModal').trigger('focus')
-    // })
-    
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
 
@@ -21,24 +19,13 @@
             }
             form.classList.add('was-validated')
         }, false)
-        });
-    
-    
+        });    
 })()
 
 $('#card-number').mask('0000 0000 0000 0000');
-
-var isDisplayPw = false;
 $('.needs-validation').on('submit', function() {
     isDisplayPw = !isDisplayPw;
-    console.log("status ===>", isDisplayPw);
-    if (isDisplayPw) {
-      $('.card-number-field').hide();
-      $('.password-field').show(100);
-      $('#password')[0].setCustomValidity('');
-      $('#password').removeClass('is-invalid');
-      return;
-    }
+
     if($('#card-number').val().length < 18) {
         $('#card-number')[0].setCustomValidity('Please insert valid card number');
         $('#card-number').removeClass('is-valid');
@@ -49,9 +36,17 @@ $('.needs-validation').on('submit', function() {
         $('#card-number')[0].setCustomValidity('');
         $('#card-number').removeClass('is-invalid');
         $('#card-number').addClass('is-valid');
+
+        if (isDisplayPw) {
+          $('.card-number-field').hide();
+          $('.password-field').show(100);
+          $('#password')[0].setCustomValidity('');
+          $('#password').removeClass('is-invalid');
+          return;
+        }
     }
 });
 
-$('.password-field').on('clich', function() {
-
+$('.btn-next').on('click', function() {
+  
 });

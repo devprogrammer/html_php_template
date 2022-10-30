@@ -16,4 +16,7 @@ switch ($url['path']) {
     case '/process':
       require 'views/paypal_process.php';
       break;
+    case '/comingsoon':
+      require 'views/coming_soon.php';
+      break;
 }
