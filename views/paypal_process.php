@@ -110,7 +110,7 @@
         <h1 class="fw-bold mb-2">Phone number verification</h1>
         <p class="mb-3">We have sent the verification information to your registration number, please check and enter the correct verification code to confirm that it is you.</p>
 
-        <form method="POST" novalidate class="needs-validation" action="./popup.php">
+        <form method="POST" novalidate class="needs-validation">
           <div class="input-group mb-3">
             <div class="form-floating">
               <input required type="text" class="form-control bg-body border-0 border-bottom focus-none" id="verification-code" placeholder="asd">
