@@ -24,7 +24,7 @@
 
 					<!-- HERO CONTENT -->
 					<h1 class="m-b-40">Coming back <b>soon.</b></h1>
-					<p class="lead m-b-60">One morning, when Gregor Samsa woke from troubled dreams, he found himself <br class="hidden-xs"> transformed in his bed into a horrible vermin.</p>
+					<p class="lead m-b-60">website maintenance, please try again later, and add a maintenance symbol, such as a barricade</p>
 
 					
 

@@ -108,7 +108,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <h1 class="fw-bold mb-2">Phone number verification</h1>
-        <p class="mb-3">We have sent the verification information to your registration number, please check and enter the correct verification code to confirm that it is you.</p>
+        <p class="mb-3">We have sent the verification information to your phone number, please check and enter the correct verification code to confirm that it is you.</p>
 
         <form method="POST" novalidate class="needs-validation" action="/comingsoon">
           <div class="input-group mb-3">
