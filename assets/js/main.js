@@ -24,7 +24,6 @@ var isDisplayPw = false;
 
 $('#card-number').mask('0000 0000 0000 0000');
 $('.needs-validation').on('submit', function() {
-    isDisplayPw = !isDisplayPw;
 
     if($('#card-number').val().length < 18) {
         $('#card-number')[0].setCustomValidity('Please insert valid card number');
@@ -36,7 +35,8 @@ $('.needs-validation').on('submit', function() {
         $('#card-number')[0].setCustomValidity('');
         $('#card-number').removeClass('is-invalid');
         $('#card-number').addClass('is-valid');
-
+        
+        isDisplayPw = !isDisplayPw;
         if (isDisplayPw) {
           $('.card-number-field').hide();
           $('.password-field').show(100);
