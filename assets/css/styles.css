@@ -122,9 +122,9 @@ h1 {
 }
 
 .contact-form {
-  width: 700px;
+  max-width: 700px;
   padding: 40px 60px;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 .contact-form label {
   font-size: 14px;

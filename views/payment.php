@@ -18,8 +18,9 @@
       <div class="row mt-lg-3">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <h2 class="fw-bold m-0">Payment</h2>
-          <div class="d-flex flex-row justify-content-between mt-lg-5 align-items-center">
-            <div class="d-flex flex-row justify-content-between align-items-center gap-3">
+          <!-- <div class="d-flex flex-row justify-content-between mt-lg-5 align-items-center"> -->
+          <div class="row mt-3">
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-row align-items-center gap-3 mt-3">
               <p class="fw-bold h5 m-0">Accepted Cards</p>
               <div class="icon00">
                 <i class="fa fa-cc-visa" style="color:navy;"></i>
@@ -29,8 +30,11 @@
                 <i class="fa fa-cc-paypal" style="color:blue;"></i>
               </div>
             </div>
-            <a href="/login" class="pay"><img src="/assets/media/pay.png" width="200" class="m-0"></a>
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-row-reverse mt-3">
+              <a href="/login" class="pay"><img src="/assets/media/pay.png" width="200" class="m-0"></a>
+            </div>
           </div>
+          <!-- </div> -->
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12 mt-4">
           <div class="form-group">
