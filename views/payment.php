@@ -43,7 +43,7 @@
               
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
-                  <input type="date" class="form-control" id="expmonth" name="expmonth" value="2022-11-12" placeholder="Expire data (DD/MM/YY)">
+                  <input type="text" class="form-control" id="expmonth" name="expmonth" placeholder="MM/YY">
                 </div>
               </div>
               <div class="col-md-6 col-sm-6 col-xs-12">
